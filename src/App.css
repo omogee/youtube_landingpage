@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
+.nav-div{margin: 0;padding:0;display: flex;flex-wrap: nowrap;padding: 0px 20px;justify-content: space-between;}
+.nav-sect1{width:15%;}
+.nav-sect1_main{width:100%;display: flex;flex-wrap: nowrap;}
+.nav-icon{align-self: center;width:25%}
+.nav-icon span{color:grey;font-size: 20px;font-weight: lighter;padding:15px;}
+.nav-brand{width:60%;padding:0}
+.nav-brand img{padding:0}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.nav-sect2{width:50%;align-self: center;}
+.nav-sect2_main{width:100%;align-self: center;display: flex;flex-wrap: nowrap;}
+.nav-search{width:90%;align-self: center;}
+.nav-search input{width:95% !important;padding: 12px;border:1px solid lightgrey;border-radius: 20px;}
+.nav-audio-search{align-self: center;}
+.nav-audio-search span{padding:15px 15px;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.roundborder:hover{background-color: rgb(240, 237, 237);border-radius: 50%;}
+.nav-sect3{width:13%;align-self: center;}
+.nav-sect3_main{width:100%;align-self: center;display: flex;flex-wrap: nowrap;}
+.nav-icons{width:17%;align-self: center;}
+.icon_1{color:grey;font-size: 18px;}
+.icon_2{color:grey;font-size: 22px;}
+.icon_3{padding:7px 11px;color:white;background-color: purple;font-weight: bolder;border:1px solid grey;border-radius: 50%;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.nav-div2{width:100%;overflow: hidden;padding:0;margin: 0;}
+.nav-div2_subdiv{width:200%;display: flex;overflow:scroll !important}
+.nav-div2_subsection{margin:0px 10px;text-align: center;align-self: center;padding:3px 10px;border-radius: 4px;background-color: rgb(240, 237, 237) ;text-transform:capitalize;border:1px solid lightgrey;}
+.nav-div2_subsection span{margin-top: 50px;font-size: 13px;}
+.nav-div2_subsection:hover{background-color:lightgrey;cursor:pointer}
 
-.App-link {
-  color: #61dafb;
-}
+.landingapp_main{display: flex;flex-wrap: nowrap;width: 100%;}
+.landingapp_1{width:10%; visibility: visible;}
+.landingapp_2{width:90%}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.datadiv_main{width:30%}
+.datadiv_main:hover .hovershow{display: block}
+.detailsdiv:hover .fa-ellipsis-v{display: block;}
+
+.hovershow{display:none}
+.fa-ellipsis-v{display: none;}
+
+@media all and (max-width: 900px){
+  .datadiv_main{width:45%}
+}
+@media all and (max-width: 700px){
+  .landingapp_1{width:10%; visibility:hidden} 
+}
+@media all and (max-width: 600px){
+  .landingapp_1{width:10%; visibility:hidden}
+  .datadiv_main{width:80%}
 }

@@ -19,11 +19,11 @@
 .nav-icons{width:17%;align-self: center;}
 .icon_1{color:grey;font-size: 18px;}
 .icon_2{color:grey;font-size: 22px;}
-.icon_3{padding:7px 11px;color:white;background-color: purple;font-weight: bolder;border:1px solid grey;border-radius: 50%;}
+.icon_3{padding:7px 11px;cursor: pointer;color:white;background-color: purple;font-weight: bolder;border:1px solid grey;border-radius: 50%;}
 
 .nav-div2{width:100%;overflow: hidden;padding:0;margin: 0;}
 .nav-div2_subdiv{width:200%;display: flex;overflow:scroll !important}
-.nav-div2_subsection{margin:0px 10px;text-align: center;align-self: center;padding:3px 10px;border-radius: 4px;background-color: rgb(240, 237, 237) ;text-transform:capitalize;border:1px solid lightgrey;}
+.nav-div2_subsection{margin:0px 10px;width:100%;text-align: center;align-self: center;padding:3px 10px;border-radius: 4px;background-color: rgb(240, 237, 237) ;text-transform:capitalize;border:1px solid lightgrey;}
 .nav-div2_subsection span{margin-top: 50px;font-size: 13px;}
 .nav-div2_subsection:hover{background-color:lightgrey;cursor:pointer}
 
@@ -35,16 +35,54 @@
 .datadiv_main:hover .hovershow{display: block}
 .detailsdiv:hover .fa-ellipsis-v{display: block;}
 
+.sidey:hover{background-color: grey;border-radius: 10px;cursor:pointer}
+.lightsidey:hover{background-color: lightgrey;border-radius: 5px;cursor: pointer;}
+
 .hovershow{display:none}
 .fa-ellipsis-v{display: none;}
+.sidenavbar{display:none}
+.nav-div2_subdiv_divider{display:block}
+.nav-div2_maindiv{width:90%;margin-bottom:10px;height:100%}
+.dropdown-btn{display:none}
+.icon-badge{right:43%}
+
+@media all and (max-width: 1000px){
+  .icon-badge{right:47%}
+  .nav-sect1{width:30%;}
+  .nav-sect2{width:40%;align-self: center;}
+  .nav-search input{width:80% !important;}
+  .nav-sect3{width:20%;align-self: center;}
+  .datadiv_main{width:45%}
+}
 
 @media all and (max-width: 900px){
+  .icon-badge{right:45%}
+  .nav-sect1{width:30%;}
+  .nav-sect2{width:40%;align-self: center;}
+  .nav-search input{width:80% !important;}
+  .nav-sect3{width:20%;align-self: center;}
+  .datadiv_main{width:45%}
+}
+@media all and (max-width: 800px){
+  .icon-badge{right:50%}
+  .nav-sect1{width:30%;}
+  .nav-sect2{width:40%;align-self: center;}
+  .nav-search input{width:80% !important;}
+  .nav-sect3{width:20%;align-self: center;}
   .datadiv_main{width:45%}
 }
 @media all and (max-width: 700px){
+  .icon-badge{right:25%}
+  .dropdown-btn{display: block;}
+  .nav-div2_subdiv_divider{display:none}
+  .nav-div2_maindiv{width:100%;margin:0px;padding:0;height:0px;overflow: hidden;}
+  .nav-div2_subdiv{width:100%;display: block;overflow:hidden !important;padding:0;margin:0;}
+  .sidenavbar{display:block}
+  .nav-icon{align-self: center;width:30%}
   .landingapp_1{width:10%; visibility:hidden} 
 }
 @media all and (max-width: 600px){
+  .icon-badge{right:10%}
   .landingapp_1{width:10%; visibility:hidden}
   .datadiv_main{width:80%}
 }
